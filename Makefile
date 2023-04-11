@@ -1,5 +1,6 @@
 install:
-		pip install poetry && \
-		poetry install
+	pip install poetry && \
+	poetry install
+
 start:
-    	poetry run python bot/__main__.py
+	poetry run python bot/__main__.py
