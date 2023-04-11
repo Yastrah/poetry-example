@@ -17,7 +17,7 @@ dp = Dispatcher(bot)
 
 @dp.message_handler(commands=['start', 'help'])
 async def send_welcome(message: types.Message):
-    with open("data/file.txt", 'r') as file:
+    with open("bot/data/file.txt", 'r') as file:
         data = file.read().strip()
     """
     This handler will be called when user sends `/start` or `/help` command
