@@ -10,8 +10,8 @@ load_dotenv()
 logging.basicConfig(level=logging.INFO)
 
 # Initialize bot and dispatcher
-# PROXY_URL = "http://proxy.server:3128"
-bot = Bot(token=os.getenv('TOKEN'))
+PROXY_URL = "http://proxy.server:3128"
+bot = Bot(token=os.getenv('TOKEN'), proxy=PROXY_URL)
 dp = Dispatcher(bot)
 
 
